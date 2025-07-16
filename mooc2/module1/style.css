@@ -1,0 +1,64 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif; /* updated font-family */
+  font-size: 16px;               /* updated font-size */
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+/* Header styles */
+header {
+  background-color: #4CAF50; /* updated background color */
+  padding: 20px;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333; /* updated background color */
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block; /* updated display property */
+  width: 150px;          /* updated width */
+  text-align: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main content styles */
+main {
+  background-color: #f9f9f9; /* updated background color */
+  font-size: 18px;           /* updated font-size */
+  padding: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #222; /* updated background color */
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;             /* updated text alignment */
+  font-family: 'Georgia', serif;  /* updated font-family */
+  color: #333;                    /* updated color */
+}
+
+/* Paragraph styles */
+p {
+  line-height: 1.6; /* updated line-height */
+}
