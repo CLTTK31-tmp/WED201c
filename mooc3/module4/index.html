@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script src="gallery.js" defer></script>
+</head>
+<body onload="addTabFocus()">
+
+  <h1>Accessible Interactive Photo Gallery</h1>
+
+  <!-- Main display area -->
+  <div id="image">
+    Hover over or focus on an image below to display here.
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="gallery">
+    <img class="preview" 
+         src="https://picsum.photos/id/1011/200/150" 
+         alt="A calm lake surrounded by mountains"
+         onmouseover="upDate(this)" 
+         onmouseout="unDo()" 
+         onfocus="upDate(this)" 
+         onblur="unDo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1025/200/150" 
+         alt="A puppy looking playful"
+         onmouseover="upDate(this)" 
+         onmouseout="unDo()" 
+         onfocus="upDate(this)" 
+         onblur="unDo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1035/200/150" 
+         alt="A forest path with tall trees"
+         onmouseover="upDate(this)" 
+         onmouseout="unDo()" 
+         onfocus="upDate(this)" 
+         onblur="unDo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1043/200/150" 
+         alt="A colorful sunset over the beach"
+         onmouseover="upDate(this)" 
+         onmouseout="unDo()" 
+         onfocus="upDate(this)" 
+         onblur="unDo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1056/200/150" 
+         alt="Snow-capped mountains under a blue sky"
+         onmouseover="upDate(this)" 
+         onmouseout="unDo()" 
+         onfocus="upDate(this)" 
+         onblur="unDo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1067/200/150" 
+         alt="A field of sunflowers in full bloom"
+         onmouseover="upDate(this)" 
+         onmouseout="unDo()" 
+         onfocus="upDate(this)" 
+         onblur="unDo()">
+  </div>
+
+</body>
+</html>
