@@ -1,0 +1,116 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif; /* updated font-family */
+  font-size: 16px;               /* updated font-size */
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+/* SKIP LINK (hidden by default, shows on focus) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+/* Header styles */
+header {
+  background-color: #4CAF50; /* updated background color */
+  padding: 20px;
+}
+
+/* Navigation styles */
+nav {
+  display: inline-block;  /* NEW requirement */
+  width: 80%;             /* NEW requirement */
+  background-color: #333; /* updated background color */
+  padding: 10px;
+}
+
+/* Style ONLY the image inside nav */
+nav img {
+  width: 10%; /* NEW requirement */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* COMMENT OUT OLD li STYLING */
+/*
+nav ul li {
+  display: inline-block; 
+  width: 150px;          
+  text-align: center;
+}
+*/
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main content styles */
+main {
+  background-color: #f9f9f9; /* updated background color */
+  font-size: 18px;           /* updated font-size */
+  padding: 20px;
+}
+
+/* GRID LAYOUT */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%; /* two columns ~40% each */
+  justify-content: center;        /* center columns */
+  align-items: start;             /* align items at top */
+  row-gap: 20px;                  /* space between rows */
+  column-gap: 20px;               /* space between columns */
+}
+
+/* ONLY images inside grid take full width */
+.grid img {
+  width: 100%;
+}
+
+/* FLEX LAYOUT (optional for flexible image layouts) */
+.flex {
+  display: flex;
+  flex-wrap: wrap;               /* wrap to multiple lines */
+  justify-content: space-around; /* space evenly */
+  gap: 10px;                     /* optional spacing */
+}
+
+/* Footer styles */
+footer {
+  background-color: #222; /* updated background color */
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;             /* updated text alignment */
+  font-family: 'Georgia', serif;  /* updated font-family */
+  color: #333;                    /* updated color */
+}
+
+/* Paragraph styles */
+p {
+  line-height: 1.6; /* updated line-height */
+}
