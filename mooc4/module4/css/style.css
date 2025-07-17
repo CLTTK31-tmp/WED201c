@@ -1,0 +1,91 @@
+/* ===== DEFAULT (Mobile-first) ===== */
+html {
+  scroll-behavior: smooth; /* will disable later for prefers-reduced-motion */
+}
+
+body {
+  background-color: #dedede;
+  padding: 5px;
+  margin: 15px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1-column grid for mobile */
+  gap: 10px; /* 10px gap between rows and columns */
+}
+
+figure {
+  border: 5px solid blue;
+  border-radius: 10px;
+  padding: 10px;
+  background: white;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* ===== TABLET VIEW ≥ 772px ===== */
+@media (min-width: 772px) {
+  .grid {
+    grid-template-columns: 1fr 1fr; /* 2-column grid */
+  }
+
+  figure {
+    border-radius: 50%; /* Make circular figures */
+  }
+
+  /* Last figure spans both columns */
+  .grid figure:last-child {
+    grid-column: span 2;
+  }
+}
+
+/* ===== LARGE SCREEN VIEW ≥ 992px ===== */
+@media (min-width: 992px) {
+  /* Every third figure spans both columns */
+  .grid figure:nth-child(3n) {
+    grid-column: span 2;
+  }
+
+  /* Remove border radius (back to square) */
+  figure {
+    border-radius: 0;
+  }
+}
+
+/* ===== PREFERS-REDUCED-MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto; /* disable smooth scroll */
+  }
+}
+
+/* ===== DARK MODE ===== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111; /* darker background */
+    color: #f1f1c0; /* lighter yellow-ish text */
+  }
+
+  figure {
+    background-color: #222; /* dark background for figures */
+    color: #ffeb99; /* light yellow text */
+    border-color: black; /* dark borders */
+  }
+}
